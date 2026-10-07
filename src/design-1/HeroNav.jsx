@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Icon from '../components/Icon';
+import VariantSelector from '../components/VariantSelector';
 import { LANDING_ICONS } from './icons';
 import { GET_RAYY_URL, HOME_URL, MAIN_NAV } from './content';
 import logo from '../assets/landing/logo-white.png';
@@ -31,6 +32,7 @@ export default function HeroNav() {
             <a key={link.href} href={link.href}>{link.label}</a>
           ))}
         </nav>
+        <VariantSelector variant={1} />
         <a href={GET_RAYY_URL} className="l-btn l-btn-white l-btn-sm l-topbar-cta">
           Get Rayy <Icon className="l-icon" paths={LANDING_ICONS.arrowUpRight} />
         </a>

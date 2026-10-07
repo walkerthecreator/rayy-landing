@@ -1,0 +1,32 @@
+.variant-selector {
+  flex-shrink: 0;
+  min-height: 44px;
+  max-width: 124px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color-scheme: dark;
+}
+
+.variant-selector option {
+  background: #fff;
+  color: #182b31;
+}
+
+.variant-selector:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .l-topbar .l-topbar-cta,
+  .n-topbar .n-topbar-cta {
+    display: none;
+  }
+}

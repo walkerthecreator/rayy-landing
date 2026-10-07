@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Icon from '../components/Icon';
+import VariantSelector from '../components/VariantSelector';
 import {
   EXPERIENCES, FOOTER_LINKS, GET_RAYY_URL, GROOMING_URL, HOME_URL, ICONS, MAIN_NAV, OCCASIONS,
   PROFESSIONALS_URL, QUICK_ACTIONS, SEARCH_URL, SERVICES,
@@ -47,6 +48,7 @@ function Header() {
         <nav aria-label="Main" className="n-topbar-nav">
           {MAIN_NAV.map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}
         </nav>
+        <VariantSelector variant={2} />
         <a href={GET_RAYY_URL} className="n-chip n-topbar-cta">
           Get Rayy <Icon className="n-icon" paths={ICONS.arrowUpRight} />
         </a>
